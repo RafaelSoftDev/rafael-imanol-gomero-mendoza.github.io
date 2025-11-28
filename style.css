@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1b1b2f);
+    color: #f0f0f0;
+    line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 6rem 1.5rem;
+    background: url('fondo.jpg') center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    background-color: #00000066;
+}
+
+.hero-name {
+    font-size: 2.6rem;
+    color: #00eaff;
+    margin-bottom: 0.3rem;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.frase-box {
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    background: rgba(0,0,0,0.6);
+    border-left: 4px solid #00bcd4;
+    font-size: 1.1rem;
+    font-style: italic;
+    max-width: 600px;
+}
+
+/* SECCIONES */
+.section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.section h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    color: #00bcd4;
+    border-left: 4px solid #00bcd4;
+    padding-left: 0.6rem;
+}
+
+.companeros {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.companeros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.comp-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #eafcff;
+    font-weight: 600;
+    transition: transform .18s ease, box-shadow .18s ease, background .2s ease;
+}
+
+.comp-item a:hover {
+    transform: translateY(-6px);
+    background: rgba(0, 188, 212, 0.12);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+.companeros h2 {
+    color: #00bcd4;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid #00bcd4;
+    padding-left: 0.6rem;
+    font-size: 1.6rem; /* mismo tamaño que otros h2 */
+}
+
+/* GRID INTERESES */
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.interest-grid li {
+    background: rgba(255,255,255,0.06);
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #00bcd4;
+    transition: 0.3s;
+}
+
+.interest-grid li:hover {
+    transform: translateX(5px);
+    background: rgba(255,255,255,0.09);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #333;
+    color: #888;
+    margin-top: 3rem;
+}
